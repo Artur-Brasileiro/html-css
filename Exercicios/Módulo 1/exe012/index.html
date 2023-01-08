@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Usando links externos:</h1>
+    <p>Para transformar algum termo em uma âncora, basta envolopa-lo com a tag <b><q>a</q></b>. Quando você clicar no link, automaticamente o seu site fecha e o link clicado abre, portanto, é viável usar target="_blank" para abrir uma nova guia ao clicar, mantendo seu site aberto. rel="external" serve para o site entender que o link é externo.</p>
+    <p>Você pode acessar meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público do GitHub</a>.</p>
+    <p>Você também pode acessar o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external">meu canal gratuito do YouTube</a>.</p>
+    <h1>Usando links internos:</h1>
+    <p>Esta é a primeira página do meu site, caso queira acessar a segunda página, <a href="pag002.html" rel="next">click aqui</a>!</p>
+    <p><b>OBSERVAÇÃO:</b> Ultilize rel="next" dentro da tag "a" para o Google entender que o link o te direcionará para uma próxima página!</p>
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a>!</p>
+    <h1>Links para download</h1>
+    <ul>
+        <li>
+            <a href="livro/Aula10.pdf" target="_blank">Aula 10 PDF.</a> PDF é mais chato pra baixar, melhor abrir em outra guia.</li>
+        <li>
+            <a href="livro/Aula10.1.zip" download="Aula10.1.zip">Aula 10 ZIP.</a> Para por algum arquivo para baixar, basta usar download="nome do arquivo" dentro da tag "a".
+        </li>
+    </ul>
+</body>
+</html>

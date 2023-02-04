@@ -9,7 +9,7 @@
 <body>
     <h1>Testando formulários</h1>
     <form action="cadastro.php" method="get">
-        <label for="iest">Estado</label>
+        <label for="iest">Estado: </label>
         <select name="estado" id="iest">
             <option value="" selected>---Escolha---</option>
 
@@ -26,14 +26,19 @@
             </optgroup>
         </select>
         <p>
-            <label for="iprof">Profisão</label>
+            <label for="iprof">Profisão: </label>
             <input type="text" name="prof" id="iprof" list="listprof">
             <datalist id="listprof">
-                <option value="PROF">Professor</option>
-                <option value="ENG">Engenheiro</option>
-                <option value="MED">Médico</option>
-                <option value="PRO">Programador</option>
+                <option>Professor</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+                <option>Programador</option>
             </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem..."></textarea>
         </p>
 
         <p>

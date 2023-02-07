@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@media print { /* Impressão */
+    *{
+        font-family: 'Courier New', Courier, monospace;  
+    }
+
+    body{
+        background: url(../imagens/back-print.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    img#print{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* Tablet */
+    body{
+        background: url(../imagens/back-tablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+        margin: auto;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* Desktop */
+    body{
+        background: url(../imagens/back-pc.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: block;
+        margin: auto;
+    }
+    img#tv{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){ /* Grandes Telas */ 
+    body{
+        background: url(../imagens/back-tv.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+        margin: auto;
+    }
+    img#print{
+        display: none;
+    }
+}
